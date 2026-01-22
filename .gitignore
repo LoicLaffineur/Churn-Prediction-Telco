@@ -1,0 +1,20 @@
+# --- Python ---
+__pycache__/
+
+# --- Jupyter ---
+.ipynb_checkpoints/
+
+# --- MacOS files ---
+.DS_Store
+
+# --- Model artifacts ---
+*.pkl
+!Streamlit_app/*.pkl
+
+# --- Devcontainer (VS Code / GitHub Codespaces) ---
+.devcontainer/
+
+# --- Virtual Env ---
+.env
+.venv/
+venv/
