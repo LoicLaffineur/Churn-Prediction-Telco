@@ -33,13 +33,28 @@ Python • Pandas • Scikit‑learn • XGBoost • Logistic Regression • Mat
 
 ### Final Performance
 
+<img width="619" height="628" alt="pr_churn" src="https://github.com/user-attachments/assets/35446916-b358-461f-9889-c2ed320d995e" />
+
 ### Confusion Matrix
 
+<img width="1454" height="690" alt="CM_churn" src="https://github.com/user-attachments/assets/756b2009-280d-40a8-ade4-36a678342a27" />
+
 ### SHAP Interpretability
+
+<img width="884" height="497" alt="beeswarm_churn" src="https://github.com/user-attachments/assets/8185866b-df6a-4d23-a8ef-16b566436d62" />
+
+<img width="1309" height="186" alt="force_churn" src="https://github.com/user-attachments/assets/76374e56-8f24-44fe-a34e-3c27147761bc" />
 
 ## 🤖 Streamlit Application
 
 #### 🔗 Live demo:  
-https://laffineur-telco-churn.streamlit.app/ (laffineur-telco-churn.streamlit.app in Bing)
 
-<img width="1581" height="827" alt="str" src="https://github.com/user-attachments/assets/410022ff-663e-40c2-8af2-8b70522557a5" />
+https://laffineur-telco-churn.streamlit.app/
+
+<img width="1470" height="711" alt="Streamlit_1" src="https://github.com/user-attachments/assets/9ad144cf-6aab-4e6f-95b3-6a2eebe9052a" />
+
+<img width="1470" height="711" alt="Streamlit_2" src="https://github.com/user-attachments/assets/ed1848cb-5e7c-4d0a-b571-f51db18355ef" />
+
+<img width="1470" height="711" alt="Streamlit_3" src="https://github.com/user-attachments/assets/48699e58-24d2-4c46-bee2-47e31757e41d" />
+
+
