@@ -47,7 +47,7 @@ Python · Pandas · Scikit-learn · XGBoost · Logistic Regression · SHAP · St
 
 ### Confusion Matrix
 
-<img width="1454" height="690" alt="CM_churn" src="assets/Confusion_Matrix.png" />
+<img width="1454" height="690" alt="CM_churn" src="assets/Confusion_matrix.png" />
 
 ### SHAP Interpretability
 
