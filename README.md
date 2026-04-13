@@ -43,24 +43,24 @@ Python · Pandas · Scikit-learn · XGBoost · Logistic Regression · SHAP · St
 
 ### Final Performance
 
-<img width="619" height="628" alt="pr_churn" src="assets/PR_Curves" />
+<img width="619" height="628" alt="pr_churn" src="assets/PR_Curves.png" />
 
 ### Confusion Matrix
 
-<img width="1454" height="690" alt="CM_churn" src="assets/Confusion_Matrix" />
+<img width="1454" height="690" alt="CM_churn" src="assets/Confusion_Matrix.png" />
 
 ### SHAP Interpretability
 
-<img width="884" height="497" alt="beeswarm_churn" src="assets/Global_SHAP" />
+<img width="884" height="497" alt="beeswarm_churn" src="assets/Global_SHAP.png" />
 
-<img width="1309" height="186" alt="force_churn" src="assets/Individual_SHAP" />
+<img width="1309" height="186" alt="force_churn" src="assets/Individual_SHAP.png" />
 
 ## Streamlit Application
 
 **Live demo:** https://laffineur-telco-churn.streamlit.app/
 
-<img width="1470" height="711" alt="Streamlit_1" src="assets/Streamlit_pred" />
+<img width="1470" height="711" alt="Streamlit_1" src="assets/Streamlit_pred.png" />
 
-<img width="1470" height="711" alt="Streamlit_2" src="assets/Streamlit_Global_SHAP" />
+<img width="1470" height="711" alt="Streamlit_2" src="assets/Streamlit_Global_SHAP.png" />
 
-<img width="1470" height="711" alt="Streamlit_3" src="assets/Streamlit_individual_SHAP" />
+<img width="1470" height="711" alt="Streamlit_3" src="assets/Streamlit_individual_SHAP.png" />
