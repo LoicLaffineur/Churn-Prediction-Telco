@@ -78,4 +78,4 @@ Prediction screen for real‑time churn risk assessment.
 Global SHAP explanations for key churn drivers.
 
 ![Individual SHAP in Streamlit](assets/Streamlit_individual_SHAP.png)  
-* -> Individual SHAP explanations for specific customers. *
+*-> Individual SHAP explanations for specific customers.*
