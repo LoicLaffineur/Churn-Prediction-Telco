@@ -52,30 +52,30 @@ SHAP analysis identifies the main churn drivers: contract type, internet service
 ### Final Performance
 
 ![PR curves](assets/PR_Curves.png)  
-*Precision‑Recall curves show the model’s performance across different thresholds.*
+- *Precision‑Recall curves show the model’s performance across different thresholds.*
 
 ### Confusion Matrix
 
 ![Confusion matrix](assets/Confusion_matrix.png)  
-*Confusion matrix illustrates true positives, false positives, and other misclassifications.*  
+- *Confusion matrix illustrates true positives, false positives, and other misclassifications.*  
 
 ### SHAP Interpretability
 
 ![Global SHAP](assets/Global_SHAP.png)  
-*Global SHAP plot shows the main features driving churn predictions.*  
+- *Global SHAP plot shows the main features driving churn predictions.*  
 
 ![Individual SHAP](assets/Individual_SHAP.png)  
-*Individual SHAP explanations highlight why specific customers are classified as high‑risk.*  
+- *Individual SHAP explanations highlight why specific customers are classified as high‑risk.*  
 
 ## Streamlit Application
 
 **Live demo:** [https://laffineur-telco-churn.streamlit.app/](https://laffineur-telco-churn.streamlit.app/)  
 
 ![Streamlit prediction screen](assets/Streamlit_pred.png)  
-*Prediction screen for real‑time churn risk assessment.*  
+- *Prediction screen for real‑time churn risk assessment.*  
 
 ![Global SHAP in Streamlit](assets/Streamlit_Global_SHAP.png)  
-*Global SHAP explanations for key churn drivers.*  
+- *Global SHAP explanations for key churn drivers.*  
 
 ![Individual SHAP in Streamlit](assets/Streamlit_individual_SHAP.png)  
-*Individual SHAP explanations for specific customers.*
+- *Individual SHAP explanations for specific customers.*
