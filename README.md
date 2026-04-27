@@ -1,35 +1,61 @@
-# Reduce Customer Churn with Predictive Analytics
+# Predict & Prevent Customer Churn
 
-## Business Problem
+Help telecom or subscription companies identify at‑risk customers before they leave.
 
-In the telecom industry, acquiring new customers is significantly more expensive than retaining existing ones.  
-Identifying subscribers at high risk of churn enables proactive retention strategies and prevents substantial revenue loss.
+## The Problem
 
-How can we detect at‑risk customers *before* they leave?
+In telecom and subscription‑based businesses:
 
-## Proposed Solution
+- Retaining an existing customer is much cheaper than acquiring a new one  
+- Losing customers quietly leads to revenue erosion  
+- Teams often react too late, after the customer has already left  
 
-A full end‑to‑end predictive pipeline to identify customers likely to churn and support targeted retention actions.
+By the time billing or support notice the churn, it’s often too expensive to bring them back.
 
-**Key steps:**
+## The Approach
 
-- Data cleaning and exploratory data analysis (EDA).
-- Predictive models: Logistic Regression and XGBoost.
-- Threshold optimization to maximize Recall (0.53 → 0.80).
-- Model interpretability with SHAP — identifying key churn drivers.
-- Deployment as an interactive Streamlit app for real‑time predictions.
+This project builds a predictive pipeline to identify customers at high risk of churn.
+
+Key components:
+
+- Data cleaning and exploratory analysis  
+- Predictive models: Logistic Regression and XGBoost  
+- Threshold optimization to improve recall (0.53 → 0.80)  
+- Model explainability with SHAP (why a customer is flagged)  
+- Interactive Streamlit app for real‑time predictions  
+
+The goal: surface at‑risk customers early so teams can act in time.
 
 ## Results
 
-| Metric | Score |
-|--------|-------|
-| Accuracy | 76% |
-| Recall | 81% |
-| Threshold optimization | Recall from 0.53 to 0.80 |
+- **81% recall** → 8 out of 10 customers who will churn are identified  
+- Accuracy around **76%** → acceptable balance between sensitivity and false positives  
+- Threshold optimization improves recall from **0.53 to 0.80**  
+- SHAP identifies key churn drivers: contract type, internet service, and customer tenure  
 
-SHAP analysis identifies the main churn drivers: contract type, internet service, customer tenure.
+Translation:  
+You can proactively target a large share of at‑risk customers before they leave.
 
-## Technologies
+## How This Can Be Used in a Company
+
+This pipeline can be used to:
+
+- Flag high‑risk customers in a CRM or customer dashboard  
+- Trigger targeted retention campaigns (SMS, email, call)  
+- Prioritize proactive outreach for high‑value or long‑tenure customers  
+- Improve collaboration between analytics, marketing, and customer success  
+
+Example:  
+A telecom team can run this model weekly and prioritize offers to the top‑risk customers to reduce churn.
+
+## Business Impact
+
+- Reduce customer churn and associated revenue loss  
+- Lower acquisition costs by focusing on retention  
+- Personalize offers based on churn risk and key drivers  
+- Turn churn data into proactive, not reactive, decisions  
+
+## Tech Stack
 
 - Python
 - Pandas
@@ -38,44 +64,46 @@ SHAP analysis identifies the main churn drivers: contract type, internet service
 - Logistic Regression
 - SHAP
 - Streamlit
-- Matplotlib
-- Seaborn
 
-## Business Impact
+## Model Insights
 
-- Fewer lost customers → lower acquisition costs.
-- Personalized retention offers for high‑risk profiles.
-- Actionable insights into churn drivers for marketing teams.
+### Performance Overview
 
-## Model Results
+- ![PR curves](assets/PR_Curves.png)  
+  Shows how the model behaves across different thresholds.
 
-### Final Performance
+- ![Confusion matrix](assets/Confusion_matrix.png)  
+  Reveals true positives, false positives, and other outcomes.
 
-![PR curves](assets/PR_Curves.png)  
-- *Precision‑Recall curves show the model’s performance across different thresholds.*
+### Explainability
 
-### Confusion Matrix
+- ![Global SHAP](assets/Global_SHAP.png)  
+  Main features driving churn at the population level.
 
-![Confusion matrix](assets/Confusion_matrix.png)  
-- *Confusion matrix illustrates true positives, false positives, and other misclassifications.*  
+- ![Individual SHAP](assets/Individual_SHAP.png)  
+  Why a specific customer is flagged as high‑risk.
 
-### SHAP Interpretability
-
-![Global SHAP](assets/Global_SHAP.png)  
-- *Global SHAP plot shows the main features driving churn predictions.*  
-
-![Individual SHAP](assets/Individual_SHAP.png)  
-- *Individual SHAP explanations highlight why specific customers are classified as high‑risk.*  
-
-## Streamlit Application
+## Streamlit Application (Interactive Demo)
 
 **Live demo:** [https://laffineur-telco-churn.streamlit.app/](https://laffineur-telco-churn.streamlit.app/)  
 
-![Streamlit prediction screen](assets/Streamlit_pred.png)  
-- *Prediction screen for real‑time churn risk assessment.*  
+- ![Streamlit prediction screen](assets/Streamlit_pred.png)  
+  Real‑time prediction for a given customer profile.  
 
-![Global SHAP in Streamlit](assets/Streamlit_Global_SHAP.png)  
-- *Global SHAP explanations for key churn drivers.*  
+- ![Global SHAP in Streamlit](assets/Streamlit_Global_SHAP.png)  
+  High‑level churn drivers.  
 
-![Individual SHAP in Streamlit](assets/Streamlit_individual_SHAP.png)  
-- *Individual SHAP explanations for specific customers.*
+- ![Individual SHAP in Streamlit](assets/Streamlit_individual_SHAP.png)  
+  Customer‑level explanations.
+
+## Work With Me
+
+I help companies predict and reduce customer churn with data and machine learning.
+
+I can help you:
+- Build churn prediction models tailored to your business  
+- Identify key churn drivers and translate them into actions  
+- Design dashboards or apps for teams (support, marketing, customer success)  
+- Turn risk scores into targeted retention campaigns  
+
+Available for freelance projects.
